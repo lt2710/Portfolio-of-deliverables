@@ -1,5 +1,5 @@
 # Portfolio-of-deliverables
-A repo to put together deliverables of past projects for showcase purpose
+A repo to put together deliverables of past projects for showcase purpose. For raw codes and other files please visit my relevant repository under the same account.
 
 ## Resume_Langyi Tian_09262019
 My most updated resume, including education, technical skills, past experiences, and relevant projects
