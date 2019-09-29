@@ -19,3 +19,6 @@ Use MCA, K-means, HC, K-medoid to segment lifestyles with data from a large-scal
 
 ## Presentation_ICSA_2019_NYU
 Using sequence analysis and various regressions to build models on wealth impact. Project with Prof. Spilerman and Prof. Lu from Columbia. Presented at NYU.
+
+## Portenas_Report
+Market research report for Portenas' possible Chinese market entry. Exploring the target customer segment using focus groups with various qualitative techniques from Psychology and Sociology.
