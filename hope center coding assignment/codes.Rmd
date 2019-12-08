@@ -1,0 +1,133 @@
+---
+title: "Hope center assignment"
+author: "Langyi Tian"
+date: "12/6/2019"
+output: html_document
+---
+
+
+
+```{r packages, message = FALSE, warning = FALSE, echo=FALSE}
+# Load packages.
+packages <- c(
+  "tidyr",
+  "dplyr",
+  "GGally",
+  "stringr",
+  "purrr",
+  "readstata13",
+  "data.table",
+  "knitr",
+  "ggplot2",
+  "bit64",
+  "forcats",
+  "tidyverse"
+)
+packages <- lapply(
+  packages,
+  FUN = function(x) {
+    if (!require(x, character.only = TRUE)) {
+      install.packages(x)
+      library(x, character.only = TRUE)
+    }
+  }
+)
+```
+
+```{r read in raw data}
+setwd("C:/Users/Tianl/Documents")
+dta1<-read.csv("delta_public_release_87_99.csv",sep ="\t")
+dta2<-read.csv("delta_public_release_00_15.csv",sep = "\t")
+```
+
+```{r}
+dta1$academicyear%>%summary()
+dta2$academicyear%>%summary()
+```
+
+```{r}
+merged_dta <- rbind(dta1 %>% filter(academicyear >= 1995),
+                    dta2)
+```
+
+```{r}
+merged_dta$sector_revised <-
+  merged_dta$sector_revised %>% factor(levels = c(0:8,99),
+                                       labels = c("Public 4-year or above",
+                                                  "Private nonprofit 4-year or above",
+                                                  "Public 2-Year",
+                                                  "Private nonprofit 2-year",
+                                                  "Private for-profit 2-year",
+                                                  "Public less-than-2-year",
+                                                  "Private nonprofit less-than-2-year",
+                                                  "Private for-profit less-than-2-year",
+                                                  "Administrative Unit",
+                                                  "Sector unknown (not active)"))
+```
+
+```{r, eval=FALSE}
+merged_dta$abc<-merged_dta$academicyear%>%as.character()%>%as.factor()
+for (i in levels("abc")) {
+  merged_dta[[paste(i, "_yes", sep = "")]] <- ifelse(merged_dta[[i]] == "yes", 1, 0)
+}
+```
+
+```{r}
+#my auto recoding codes are not working, due to time constraint i just do it manually
+merged_dta$year_1995<-merged_dta$academicyear==1995
+merged_dta$year_1996<-merged_dta$academicyear==1996
+merged_dta$year_1997<-merged_dta$academicyear==1997
+merged_dta$year_1998<-merged_dta$academicyear==1998
+merged_dta$year_1999<-merged_dta$academicyear==1999
+merged_dta$year_2000<-merged_dta$academicyear==2000
+merged_dta$year_2001<-merged_dta$academicyear==2001
+merged_dta$year_2002<-merged_dta$academicyear==2002
+merged_dta$year_2003<-merged_dta$academicyear==2003
+merged_dta$year_2004<-merged_dta$academicyear==2004
+merged_dta$year_2005<-merged_dta$academicyear==2005
+merged_dta$year_2006<-merged_dta$academicyear==2006
+merged_dta$year_2007<-merged_dta$academicyear==2007
+merged_dta$year_2008<-merged_dta$academicyear==2008
+merged_dta$year_2009<-merged_dta$academicyear==2009
+merged_dta$year_2010<-merged_dta$academicyear==2010
+merged_dta$year_2011<-merged_dta$academicyear==2011
+merged_dta$year_2012<-merged_dta$academicyear==2012
+merged_dta$year_2013<-merged_dta$academicyear==2013
+merged_dta$year_2014<-merged_dta$academicyear==2014
+merged_dta$year_2015<-merged_dta$academicyear==2015
+```
+
+```{r}
+merged_dta$msi<-"Non-MSI"
+merged_dta$msi[merged_dta$hbcu==1|merged_dta$hsi==1] <- "MSI"
+merged_dta$level<-"Not applicatble"
+merged_dta$level[merged_dta$iclevel==1] <- "4-year"
+merged_dta$level[merged_dta$iclevel==2] <- "2-year"
+merged_dta$control[merged_dta$control==-3]<-"Not applicable"
+merged_dta$code<-str_c(merged_dta$msi,
+                       merged_dta$level,
+                       merged_dta$control%>%as.character())
+#no time for recoding
+```
+
+```{r}
+newdta <-
+  merged_dta %>% select(code,
+                        academicyear,
+                        groupid,
+                        unitid,
+                        instname,
+                        sector_revised,
+                        hbcu,
+                        hsi,
+                        city,
+                        state)%>%filter(state=="NY")
+```
+
+```{r}
+newdta<-newdta[ , order(names(newdta))]
+```
+
+```{r}
+write.csv(newdta,"newdta.csv")
+```
