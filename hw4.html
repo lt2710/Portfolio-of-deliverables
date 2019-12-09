@@ -13122,7 +13122,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">##pip install keras</span>
@@ -13140,10 +13140,28 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Using TensorFlow backend.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Import data</span>
@@ -13162,7 +13180,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[33]:</div>
+    <div class="prompt output_prompt">Out[2]:</div>
 
 
 
@@ -13242,7 +13260,7 @@ These ways differ in their selection filter for keyword. This might impact the m
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[99]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -13286,7 +13304,7 @@ X:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[100]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">vect2</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">min_df</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span><span class="n">stop_words</span><span class="o">=</span><span class="s2">&quot;english&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train</span><span class="p">[</span><span class="s1">&#39;Review&#39;</span><span class="p">])</span>
@@ -13326,7 +13344,7 @@ X:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[101]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">vect3</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">min_df</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span><span class="n">stop_words</span><span class="o">=</span><span class="s2">&quot;english&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train</span><span class="p">[</span><span class="s1">&#39;Review&#39;</span><span class="p">])</span>
@@ -13366,7 +13384,7 @@ X:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[89]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define X, y data</span>
@@ -13388,7 +13406,7 @@ X:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[109]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="k">import</span> <span class="n">LogisticRegression</span>
@@ -13407,7 +13425,19 @@ X:
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[109]:</div>
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\ProgramData\Anaconda3\lib\site-packages\sklearn\linear_model\logistic.py:433: FutureWarning: Default solver will be changed to &#39;lbfgs&#39; in 0.22. Specify a solver to silence this warning.
+  FutureWarning)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -13424,7 +13454,7 @@ X:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[110]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">logreg2</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train2</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
@@ -13441,7 +13471,7 @@ X:
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[110]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -13458,7 +13488,7 @@ X:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[111]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">logreg3</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train3</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
@@ -13475,7 +13505,7 @@ X:
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[111]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -13499,7 +13529,7 @@ X:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[102]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">visualize_coefficients</span><span class="p">(</span><span class="n">coefficients</span><span class="p">,</span> <span class="n">feature_names</span><span class="p">,</span> <span class="n">n_top_features</span><span class="o">=</span><span class="mi">25</span><span class="p">):</span>
@@ -13554,7 +13584,7 @@ X:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[113]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -13597,16 +13627,24 @@ X:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="b)-Neural-Networks">b) Neural Networks<a class="anchor-link" href="#b)-Neural-Networks">&#182;</a></h3><h4 id="Input-Iris-data">Input Iris data<a class="anchor-link" href="#Input-Iris-data">&#182;</a></h4>
+<h3 id="b)-Neural-Networks">b) Neural Networks<a class="anchor-link" href="#b)-Neural-Networks">&#182;</a></h3><h4 id="Input-Iris-data-and-recode-y-to-numeric">Input Iris data and recode y to numeric<a class="anchor-link" href="#Input-Iris-data-and-recode-y-to-numeric">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[111]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;http://vincentarelbundock.github.io/Rdatasets/csv/datasets/iris.csv&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">score_to_numeric</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="s1">&#39;setosa&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="s1">&#39;virginica&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="s1">&#39;versicolor&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">2</span>
+<span class="n">data</span><span class="p">[</span><span class="s1">&#39;Species_num&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Species&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">score_to_numeric</span><span class="p">)</span>
 <span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
@@ -13620,7 +13658,7 @@ X:
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[111]:</div>
+    <div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -13649,6 +13687,7 @@ X:
       <th>Petal.Length</th>
       <th>Petal.Width</th>
       <th>Species</th>
+      <th>Species_num</th>
     </tr>
   </thead>
   <tbody>
@@ -13660,6 +13699,7 @@ X:
       <td>1.4</td>
       <td>0.2</td>
       <td>setosa</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>1</th>
@@ -13669,6 +13709,7 @@ X:
       <td>1.4</td>
       <td>0.2</td>
       <td>setosa</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>2</th>
@@ -13678,6 +13719,7 @@ X:
       <td>1.3</td>
       <td>0.2</td>
       <td>setosa</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>3</th>
@@ -13687,6 +13729,7 @@ X:
       <td>1.5</td>
       <td>0.2</td>
       <td>setosa</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>4</th>
@@ -13696,6 +13739,7 @@ X:
       <td>1.4</td>
       <td>0.2</td>
       <td>setosa</td>
+      <td>0</td>
     </tr>
   </tbody>
 </table>
@@ -13708,13 +13752,20 @@ X:
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Train-test-split">Train test split<a class="anchor-link" href="#Train-test-split">&#182;</a></h4>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[112]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s2">&quot;Sepal.Length&quot;</span><span class="p">,</span><span class="s2">&quot;Sepal.Width&quot;</span><span class="p">,</span><span class="s2">&quot;Petal.Length&quot;</span><span class="p">,</span><span class="s2">&quot;Petal.Width&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Species&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Species_num&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
 <span class="n">X_train</span><span class="p">,</span> <span class="n">X_valid</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_valid</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">2019</span><span class="p">)</span>
 </pre></div>
@@ -13724,9 +13775,16 @@ X:
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Build-the-model">Build the model<a class="anchor-link" href="#Build-the-model">&#182;</a></h4>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[113]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">Dense</span>
@@ -13741,8 +13799,7 @@ X:
 	<span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s1">&#39;binary_crossentropy&#39;</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;sgd&#39;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
 	<span class="k">return</span> <span class="n">model</span>
 
-<span class="n">model</span> <span class="o">=</span> <span class="n">KerasClassifier</span><span class="p">(</span><span class="n">build_fn</span><span class="o">=</span><span class="n">create_model</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># epochs arg is built in to Scikit learn&#39;s... </span>
-                                                                      <span class="c1"># KerasClassifier</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">KerasClassifier</span><span class="p">(</span><span class="n">build_fn</span><span class="o">=</span><span class="n">create_model</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13750,13 +13807,21 @@ X:
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Tune-hyperparameter-with-training-set">Tune hyperparameter with training set<a class="anchor-link" href="#Tune-hyperparameter-with-training-set">&#182;</a></h4><p>Because I can't find the name of num of neurons in the Keras documentation after search, I use epochs and assume the mechanics should be the same.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[114]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">GridSearchCV</span>
-<span class="n">param_grid</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">epochs</span><span class="o">=</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">16</span><span class="p">])</span>
+<span class="n">param_grid</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">epochs</span><span class="o">=</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">150</span><span class="p">])</span>
 <span class="n">grid</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">model</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">param_grid</span><span class="p">)</span>
 <span class="n">grid_result</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </pre></div>
@@ -13765,10 +13830,29 @@ X:
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\ProgramData\Anaconda3\lib\site-packages\sklearn\model_selection\_split.py:2053: FutureWarning: You should specify a value for &#39;cv&#39; instead of relying on the default value. The default value will change from 3 to 5 in version 0.22.
+  warnings.warn(CV_WARNING, FutureWarning)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[115]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Best: </span><span class="si">%f</span><span class="s2"> using </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">grid_result</span><span class="o">.</span><span class="n">best_score_</span><span class="p">,</span> <span class="n">grid_result</span><span class="o">.</span><span class="n">best_params_</span><span class="p">))</span>
@@ -13788,7 +13872,7 @@ X:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Best: 0.666667 using {&#39;epochs&#39;: 8}
+<pre>Best: 0.333333 using {&#39;epochs&#39;: 10}
 </pre>
 </div>
 </div>
@@ -13797,9 +13881,17 @@ X:
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The Best model with 67% accuracy comes with epochs=10. We'll proceed with that.</p>
+<h4 id="Validate-on-test-set">Validate on test set<a class="anchor-link" href="#Validate-on-test-set">&#182;</a></h4>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[116]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
@@ -13818,14 +13910,14 @@ X:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[117]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span>
           <span class="n">y_train</span><span class="p">,</span>
-          <span class="n">epochs</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+          <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
           <span class="n">batch_size</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span>
-<span class="n">score</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>  <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span> <span class="c1"># extract loss and accuracy from test data evaluation</span>
+<span class="n">score</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">)</span> <span class="c1"># extract loss and accuracy from test data evaluation</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
 </pre></div>
 
@@ -13843,104 +13935,43 @@ X:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Epoch 1/20
+<pre>Epoch 1/10
+120/120 [==============================] - 0s 632us/step - loss: 1.6453 - accuracy: 0.0000e+00
+Epoch 2/10
+120/120 [==============================] - 0s 8us/step - loss: 0.7293 - accuracy: 0.2167
+Epoch 3/10
+120/120 [==============================] - 0s 25us/step - loss: 0.3334 - accuracy: 0.3250
+Epoch 4/10
+120/120 [==============================] - 0s 8us/step - loss: 0.1048 - accuracy: 0.3250
+Epoch 5/10
+120/120 [==============================] - 0s 25us/step - loss: 0.0152 - accuracy: 0.3250
+Epoch 6/10
+120/120 [==============================] - 0s 17us/step - loss: -0.0422 - accuracy: 0.3250
+Epoch 7/10
+120/120 [==============================] - 0s 17us/step - loss: -0.0898 - accuracy: 0.3250
+Epoch 8/10
+120/120 [==============================] - 0s 17us/step - loss: -0.1321 - accuracy: 0.3250
+Epoch 9/10
+120/120 [==============================] - 0s 25us/step - loss: -0.1710 - accuracy: 0.3250
+Epoch 10/10
+120/120 [==============================] - 0s 17us/step - loss: -0.2064 - accuracy: 0.3250
+30/30 [==============================] - 0s 632us/step
+[0.23293437063694, 0.36666667461395264]
 </pre>
 </div>
 </div>
 
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">ValueError</span>                                Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-117-0c7055ad9f73&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-fg">      2</span>           y_train<span class="ansi-yellow-intense-fg ansi-bold">,</span>
-<span class="ansi-green-fg">      3</span>           epochs<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-cyan-intense-fg ansi-bold">20</span><span class="ansi-yellow-intense-fg ansi-bold">,</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 4</span><span class="ansi-yellow-intense-fg ansi-bold">           batch_size=128)
-</span><span class="ansi-green-fg">      5</span> score <span class="ansi-yellow-intense-fg ansi-bold">=</span> model<span class="ansi-yellow-intense-fg ansi-bold">.</span>evaluate<span class="ansi-yellow-intense-fg ansi-bold">(</span>X_valid<span class="ansi-yellow-intense-fg ansi-bold">,</span> y_valid<span class="ansi-yellow-intense-fg ansi-bold">,</span> epochs<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-cyan-intense-fg ansi-bold">100</span><span class="ansi-yellow-intense-fg ansi-bold">,</span>  metrics<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-blue-intense-fg ansi-bold">&#39;accuracy&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">]</span><span class="ansi-yellow-intense-fg ansi-bold">)</span> <span class="ansi-red-intense-fg ansi-bold"># extract loss and accuracy from test data evaluation</span>
-<span class="ansi-green-fg">      6</span> print<span class="ansi-yellow-intense-fg ansi-bold">(</span>score<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-
-<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\keras\engine\training.py</span> in <span class="ansi-cyan-fg">fit</span><span class="ansi-blue-intense-fg ansi-bold">(self, x, y, batch_size, epochs, verbose, callbacks, validation_split, validation_data, shuffle, class_weight, sample_weight, initial_epoch, steps_per_epoch, validation_steps, validation_freq, max_queue_size, workers, use_multiprocessing, **kwargs)</span>
-<span class="ansi-green-fg">   1237</span>                                         steps_per_epoch<span class="ansi-yellow-intense-fg ansi-bold">=</span>steps_per_epoch<span class="ansi-yellow-intense-fg ansi-bold">,</span>
-<span class="ansi-green-fg">   1238</span>                                         validation_steps<span class="ansi-yellow-intense-fg ansi-bold">=</span>validation_steps<span class="ansi-yellow-intense-fg ansi-bold">,</span>
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1239</span><span class="ansi-yellow-intense-fg ansi-bold">                                         validation_freq=validation_freq)
-</span><span class="ansi-green-fg">   1240</span> 
-<span class="ansi-green-fg">   1241</span>     def evaluate(self,
-
-<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\keras\engine\training_arrays.py</span> in <span class="ansi-cyan-fg">fit_loop</span><span class="ansi-blue-intense-fg ansi-bold">(model, fit_function, fit_inputs, out_labels, batch_size, epochs, verbose, callbacks, val_function, val_inputs, shuffle, initial_epoch, steps_per_epoch, validation_steps, validation_freq)</span>
-<span class="ansi-green-fg">    194</span>                     ins_batch<span class="ansi-yellow-intense-fg ansi-bold">[</span>i<span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-yellow-intense-fg ansi-bold">=</span> ins_batch<span class="ansi-yellow-intense-fg ansi-bold">[</span>i<span class="ansi-yellow-intense-fg ansi-bold">]</span><span class="ansi-yellow-intense-fg ansi-bold">.</span>toarray<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">    195</span> 
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 196</span><span class="ansi-yellow-intense-fg ansi-bold">                 </span>outs <span class="ansi-yellow-intense-fg ansi-bold">=</span> fit_function<span class="ansi-yellow-intense-fg ansi-bold">(</span>ins_batch<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">    197</span>                 outs <span class="ansi-yellow-intense-fg ansi-bold">=</span> to_list<span class="ansi-yellow-intense-fg ansi-bold">(</span>outs<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">    198</span>                 <span class="ansi-green-intense-fg ansi-bold">for</span> l<span class="ansi-yellow-intense-fg ansi-bold">,</span> o <span class="ansi-green-intense-fg ansi-bold">in</span> zip<span class="ansi-yellow-intense-fg ansi-bold">(</span>out_labels<span class="ansi-yellow-intense-fg ansi-bold">,</span> outs<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
-
-<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\tensorflow_core\python\keras\backend.py</span> in <span class="ansi-cyan-fg">__call__</span><span class="ansi-blue-intense-fg ansi-bold">(self, inputs)</span>
-<span class="ansi-green-fg">   3732</span>               &#39;You must feed a value for placeholder %s&#39; % (tensor,))
-<span class="ansi-green-fg">   3733</span>       <span class="ansi-green-intense-fg ansi-bold">if</span> <span class="ansi-green-intense-fg ansi-bold">not</span> isinstance<span class="ansi-yellow-intense-fg ansi-bold">(</span>value<span class="ansi-yellow-intense-fg ansi-bold">,</span> ops<span class="ansi-yellow-intense-fg ansi-bold">.</span>Tensor<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 3734</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>value <span class="ansi-yellow-intense-fg ansi-bold">=</span> ops<span class="ansi-yellow-intense-fg ansi-bold">.</span>convert_to_tensor<span class="ansi-yellow-intense-fg ansi-bold">(</span>value<span class="ansi-yellow-intense-fg ansi-bold">,</span> dtype<span class="ansi-yellow-intense-fg ansi-bold">=</span>tensor<span class="ansi-yellow-intense-fg ansi-bold">.</span>dtype<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">   3735</span>       <span class="ansi-green-intense-fg ansi-bold">if</span> value<span class="ansi-yellow-intense-fg ansi-bold">.</span>dtype <span class="ansi-yellow-intense-fg ansi-bold">!=</span> tensor<span class="ansi-yellow-intense-fg ansi-bold">.</span>dtype<span class="ansi-yellow-intense-fg ansi-bold">:</span>
-<span class="ansi-green-fg">   3736</span>         <span class="ansi-red-intense-fg ansi-bold"># Temporary workaround due to `convert_to_tensor` not casting floats.</span>
-
-<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\tensorflow_core\python\framework\ops.py</span> in <span class="ansi-cyan-fg">convert_to_tensor</span><span class="ansi-blue-intense-fg ansi-bold">(value, dtype, name, preferred_dtype, dtype_hint)</span>
-<span class="ansi-green-fg">   1182</span>   preferred_dtype = deprecation.deprecated_argument_lookup(
-<span class="ansi-green-fg">   1183</span>       &#34;dtype_hint&#34;, dtype_hint, &#34;preferred_dtype&#34;, preferred_dtype)
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1184</span><span class="ansi-yellow-intense-fg ansi-bold">   </span><span class="ansi-green-intense-fg ansi-bold">return</span> convert_to_tensor_v2<span class="ansi-yellow-intense-fg ansi-bold">(</span>value<span class="ansi-yellow-intense-fg ansi-bold">,</span> dtype<span class="ansi-yellow-intense-fg ansi-bold">,</span> preferred_dtype<span class="ansi-yellow-intense-fg ansi-bold">,</span> name<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">   1185</span> 
-<span class="ansi-green-fg">   1186</span> 
-
-<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\tensorflow_core\python\framework\ops.py</span> in <span class="ansi-cyan-fg">convert_to_tensor_v2</span><span class="ansi-blue-intense-fg ansi-bold">(value, dtype, dtype_hint, name)</span>
-<span class="ansi-green-fg">   1240</span>       name<span class="ansi-yellow-intense-fg ansi-bold">=</span>name<span class="ansi-yellow-intense-fg ansi-bold">,</span>
-<span class="ansi-green-fg">   1241</span>       preferred_dtype<span class="ansi-yellow-intense-fg ansi-bold">=</span>dtype_hint<span class="ansi-yellow-intense-fg ansi-bold">,</span>
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1242</span><span class="ansi-yellow-intense-fg ansi-bold">       as_ref=False)
-</span><span class="ansi-green-fg">   1243</span> 
-<span class="ansi-green-fg">   1244</span> 
-
-<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\tensorflow_core\python\framework\ops.py</span> in <span class="ansi-cyan-fg">internal_convert_to_tensor</span><span class="ansi-blue-intense-fg ansi-bold">(value, dtype, name, as_ref, preferred_dtype, ctx, accept_composite_tensors)</span>
-<span class="ansi-green-fg">   1294</span> 
-<span class="ansi-green-fg">   1295</span>     <span class="ansi-green-intense-fg ansi-bold">if</span> ret <span class="ansi-green-intense-fg ansi-bold">is</span> <span class="ansi-green-intense-fg ansi-bold">None</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1296</span><span class="ansi-yellow-intense-fg ansi-bold">       </span>ret <span class="ansi-yellow-intense-fg ansi-bold">=</span> conversion_func<span class="ansi-yellow-intense-fg ansi-bold">(</span>value<span class="ansi-yellow-intense-fg ansi-bold">,</span> dtype<span class="ansi-yellow-intense-fg ansi-bold">=</span>dtype<span class="ansi-yellow-intense-fg ansi-bold">,</span> name<span class="ansi-yellow-intense-fg ansi-bold">=</span>name<span class="ansi-yellow-intense-fg ansi-bold">,</span> as_ref<span class="ansi-yellow-intense-fg ansi-bold">=</span>as_ref<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">   1297</span> 
-<span class="ansi-green-fg">   1298</span>     <span class="ansi-green-intense-fg ansi-bold">if</span> ret <span class="ansi-green-intense-fg ansi-bold">is</span> NotImplemented<span class="ansi-yellow-intense-fg ansi-bold">:</span>
-
-<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\tensorflow_core\python\framework\tensor_conversion_registry.py</span> in <span class="ansi-cyan-fg">_default_conversion_function</span><span class="ansi-blue-intense-fg ansi-bold">(***failed resolving arguments***)</span>
-<span class="ansi-green-fg">     50</span> <span class="ansi-green-intense-fg ansi-bold">def</span> _default_conversion_function<span class="ansi-yellow-intense-fg ansi-bold">(</span>value<span class="ansi-yellow-intense-fg ansi-bold">,</span> dtype<span class="ansi-yellow-intense-fg ansi-bold">,</span> name<span class="ansi-yellow-intense-fg ansi-bold">,</span> as_ref<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
-<span class="ansi-green-fg">     51</span>   <span class="ansi-green-intense-fg ansi-bold">del</span> as_ref  <span class="ansi-red-intense-fg ansi-bold"># Unused.</span>
-<span class="ansi-green-intense-fg ansi-bold">---&gt; 52</span><span class="ansi-yellow-intense-fg ansi-bold">   </span><span class="ansi-green-intense-fg ansi-bold">return</span> constant_op<span class="ansi-yellow-intense-fg ansi-bold">.</span>constant<span class="ansi-yellow-intense-fg ansi-bold">(</span>value<span class="ansi-yellow-intense-fg ansi-bold">,</span> dtype<span class="ansi-yellow-intense-fg ansi-bold">,</span> name<span class="ansi-yellow-intense-fg ansi-bold">=</span>name<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">     53</span> 
-<span class="ansi-green-fg">     54</span> 
-
-<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\tensorflow_core\python\framework\constant_op.py</span> in <span class="ansi-cyan-fg">constant</span><span class="ansi-blue-intense-fg ansi-bold">(value, dtype, shape, name)</span>
-<span class="ansi-green-fg">    225</span>   &#34;&#34;&#34;
-<span class="ansi-green-fg">    226</span>   return _constant_impl(value, dtype, shape, name, verify_shape=False,
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 227</span><span class="ansi-yellow-intense-fg ansi-bold">                         allow_broadcast=True)
-</span><span class="ansi-green-fg">    228</span> 
-<span class="ansi-green-fg">    229</span> 
-
-<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\tensorflow_core\python\framework\constant_op.py</span> in <span class="ansi-cyan-fg">_constant_impl</span><span class="ansi-blue-intense-fg ansi-bold">(value, dtype, shape, name, verify_shape, allow_broadcast)</span>
-<span class="ansi-green-fg">    233</span>   ctx <span class="ansi-yellow-intense-fg ansi-bold">=</span> context<span class="ansi-yellow-intense-fg ansi-bold">.</span>context<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">    234</span>   <span class="ansi-green-intense-fg ansi-bold">if</span> ctx<span class="ansi-yellow-intense-fg ansi-bold">.</span>executing_eagerly<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 235</span><span class="ansi-yellow-intense-fg ansi-bold">     </span>t <span class="ansi-yellow-intense-fg ansi-bold">=</span> convert_to_eager_tensor<span class="ansi-yellow-intense-fg ansi-bold">(</span>value<span class="ansi-yellow-intense-fg ansi-bold">,</span> ctx<span class="ansi-yellow-intense-fg ansi-bold">,</span> dtype<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">    236</span>     <span class="ansi-green-intense-fg ansi-bold">if</span> shape <span class="ansi-green-intense-fg ansi-bold">is</span> <span class="ansi-green-intense-fg ansi-bold">None</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
-<span class="ansi-green-fg">    237</span>       <span class="ansi-green-intense-fg ansi-bold">return</span> t
-
-<span class="ansi-green-intense-fg ansi-bold">C:\ProgramData\Anaconda3\lib\site-packages\tensorflow_core\python\framework\constant_op.py</span> in <span class="ansi-cyan-fg">convert_to_eager_tensor</span><span class="ansi-blue-intense-fg ansi-bold">(value, ctx, dtype)</span>
-<span class="ansi-green-fg">     94</span>       dtype <span class="ansi-yellow-intense-fg ansi-bold">=</span> dtypes<span class="ansi-yellow-intense-fg ansi-bold">.</span>as_dtype<span class="ansi-yellow-intense-fg ansi-bold">(</span>dtype<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">.</span>as_datatype_enum
-<span class="ansi-green-fg">     95</span>   ctx<span class="ansi-yellow-intense-fg ansi-bold">.</span>ensure_initialized<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-intense-fg ansi-bold">---&gt; 96</span><span class="ansi-yellow-intense-fg ansi-bold">   </span><span class="ansi-green-intense-fg ansi-bold">return</span> ops<span class="ansi-yellow-intense-fg ansi-bold">.</span>EagerTensor<span class="ansi-yellow-intense-fg ansi-bold">(</span>value<span class="ansi-yellow-intense-fg ansi-bold">,</span> ctx<span class="ansi-yellow-intense-fg ansi-bold">.</span>device_name<span class="ansi-yellow-intense-fg ansi-bold">,</span> dtype<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">     97</span> 
-<span class="ansi-green-fg">     98</span> 
-
-<span class="ansi-red-intense-fg ansi-bold">ValueError</span>: could not convert string to float: &#39;versicolor&#39;</pre>
 </div>
 </div>
 
 </div>
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The accuracy of prediction on test set is 37%.</p>
 
+</div>
+</div>
 </div>
     </div>
   </div>
